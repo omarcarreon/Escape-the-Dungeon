@@ -13,7 +13,7 @@ function Update () {
 
 function OnTriggerEnter(col : Collider){
 
-	if(col.gameObject.name == "Jugador"){
+	if(col.gameObject.name == "JugadorCam"){
 		Debug.Log("Colission");
 		source.Play();
 	}

@@ -1,0 +1,17 @@
+/Users/LeonardoGutierrez/Documents/ITC/8vo Semestre/Videojuegos/Escape-the-Dungeon/EscapeTheDungeon/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Users/LeonardoGutierrez/Documents/ITC/8vo Semestre/Videojuegos/Escape-the-Dungeon/EscapeTheDungeon/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
+/Users/LeonardoGutierrez/Documents/ITC/8vo Semestre/Videojuegos/Escape-the-Dungeon/EscapeTheDungeon/obj/Debug/Assembly-CSharp-firstpass.dll
+/Users/LeonardoGutierrez/Documents/ITC/8vo Semestre/Videojuegos/Escape-the-Dungeon/EscapeTheDungeon/obj/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Users/LeonardoGutierrez/Documents/ITC/8vo Semestre/Videojuegos/Escape-the-Dungeon/EscapeTheDungeon/Temp/bin/Debug/UnityEngine.dll
+/Users/LeonardoGutierrez/Documents/ITC/8vo Semestre/Videojuegos/Escape-the-Dungeon/EscapeTheDungeon/Temp/bin/Debug/UnityEditor.dll
+/Users/LeonardoGutierrez/Documents/ITC/8vo Semestre/Videojuegos/Escape-the-Dungeon/EscapeTheDungeon/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/LeonardoGutierrez/Documents/ITC/8vo Semestre/Videojuegos/Escape-the-Dungeon/EscapeTheDungeon/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/LeonardoGutierrez/Documents/ITC/8vo Semestre/Videojuegos/Escape-the-Dungeon/EscapeTheDungeon/Temp/bin/Debug/Mono.Cecil.dll
+/Users/LeonardoGutierrez/Documents/ITC/8vo Semestre/Videojuegos/Escape-the-Dungeon/EscapeTheDungeon/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/LeonardoGutierrez/Documents/ITC/8vo Semestre/Videojuegos/Escape-the-Dungeon/EscapeTheDungeon/Temp/bin/Debug/Unity.DataContract.dll
+/Users/LeonardoGutierrez/Documents/ITC/8vo Semestre/Videojuegos/Escape-the-Dungeon/EscapeTheDungeon/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/LeonardoGutierrez/Documents/ITC/8vo Semestre/Videojuegos/Escape-the-Dungeon/EscapeTheDungeon/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/LeonardoGutierrez/Documents/ITC/8vo Semestre/Videojuegos/Escape-the-Dungeon/EscapeTheDungeon/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/LeonardoGutierrez/Documents/ITC/8vo Semestre/Videojuegos/Escape-the-Dungeon/EscapeTheDungeon/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/LeonardoGutierrez/Documents/ITC/8vo Semestre/Videojuegos/Escape-the-Dungeon/EscapeTheDungeon/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/LeonardoGutierrez/Documents/ITC/8vo Semestre/Videojuegos/Escape-the-Dungeon/EscapeTheDungeon/Temp/bin/Debug/Mono.Cecil.Mdb.dll

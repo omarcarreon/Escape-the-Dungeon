@@ -4,6 +4,12 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
 
+
+	//Sonidos
+	public AudioSource corazon;
+
+
+	//Variables Personaje
 	private const int MAX_VIDA = 5000;
 	public int vida = MAX_VIDA;
 	public Text txtVida;
@@ -13,6 +19,12 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 	
+		//Sonidos
+		AudioSource[] audios = GetComponents<AudioSource>();
+		corazon = audios [1];
+
+
+		//Textos
 		txtVida.text = "Vida: " + ((vida * 100) / MAX_VIDA) + "%";
 		txtScore.text = "Puntos: " + score;
 
@@ -26,6 +38,7 @@ public class Player : MonoBehaviour {
 	void OnTriggerEnter(Collider col){
 
 		if(col.gameObject.name == "Heart"){
+			corazon.Play();
 			Destroy(col.gameObject);
 			vida += 250;
 			if (vida > MAX_VIDA) {
@@ -38,41 +51,4 @@ public class Player : MonoBehaviour {
 
 	}
 }
-
-/*
- * using UnityEngine;
-using System.Collections;
-using UnityEngine.UI;
-
-public class MsgSaliendoJuego : MonoBehaviour {
-
-	public Text mensaje;
-
-	// Use this for initialization
-	void Start () {
-
-	}
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
-	void onTriggerEnter(Collider col){
-	
-		if (col.gameObject.name == "RigidBodyFPSController") {
-			mensaje.text = "Estás saliendo del área de juego";
-	
-		}
-	}
-
-	void onTriggerExit(Collider col){
-
-		if (col.gameObject.name == "RigidBodyFPSController") {
-			mensaje.text = "";
-
-		}
-	}
-}
-
- * */

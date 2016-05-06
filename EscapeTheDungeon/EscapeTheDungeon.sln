@@ -7,6 +7,8 @@ Project("{8AECBC01-7FEA-0BC5-5A0D-AFA9BBABD4C4}") = "EscapeTheDungeon", "Assembl
 EndProject
 Project("{8AECBC01-7FEA-0BC5-5A0D-AFA9BBABD4C4}") = "EscapeTheDungeon", "Assembly-CSharp-Editor-firstpass.csproj", "{0B5D53D5-A5C2-DD25-4847-E3188BD4191C}"
 EndProject
+Project("{8AECBC01-7FEA-0BC5-5A0D-AFA9BBABD4C4}") = "EscapeTheDungeon", "Assembly-UnityScript.unityproj", "{284DF55F-BEEE-1700-5200-A24EEB65DC90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{0B5D53D5-A5C2-DD25-4847-E3188BD4191C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B5D53D5-A5C2-DD25-4847-E3188BD4191C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B5D53D5-A5C2-DD25-4847-E3188BD4191C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{284DF55F-BEEE-1700-5200-A24EEB65DC90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{284DF55F-BEEE-1700-5200-A24EEB65DC90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{284DF55F-BEEE-1700-5200-A24EEB65DC90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{284DF55F-BEEE-1700-5200-A24EEB65DC90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

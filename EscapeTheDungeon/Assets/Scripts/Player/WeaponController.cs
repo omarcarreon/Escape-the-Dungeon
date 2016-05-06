@@ -103,7 +103,7 @@ public class WeaponController : MonoBehaviour {
 		float tiempoDeVida = .5f;
 		switch (armaActual) {
 		case 0:
-			if (GameObject.Find ("Pokeball(Clone)") == null) {
+			if (GameObject.Find ("stone(Clone)") == null) {
 				Rigidbody clone = Instantiate (lanzaPiedras, transform.position, transform.rotation) as Rigidbody;
 				clone.velocity = transform.TransformDirection (new Vector3 (0, 0, speed));
 				Destroy(clone.gameObject, tiempoDeVida);
@@ -111,14 +111,14 @@ public class WeaponController : MonoBehaviour {
 			}
 			break;
 		case 1:
-			if (GameObject.Find ("Pokeball(Clone)") == null) {
+			if (GameObject.Find ("Lanza(Clone)") == null) {
 				Rigidbody clone = Instantiate (lanzaLanza, transform.position, transform.rotation) as Rigidbody;
 				clone.velocity = transform.TransformDirection (new Vector3 (0, 0, speed));
 				Destroy (clone.gameObject, tiempoDeVida);
 			}
 			break;
 		case 2:
-			if (GameObject.Find ("Pokeball(Clone)") == null) {
+			if (GameObject.Find ("Flecha(Clone)") == null) {
 				Rigidbody clone = Instantiate (lanzaFlecha, transform.position, transform.rotation) as Rigidbody;
 				clone.velocity = transform.TransformDirection (new Vector3 (0, 0, speed));
 				Destroy(clone.gameObject, tiempoDeVida);

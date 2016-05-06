@@ -39,6 +39,7 @@ function Update()
      	if(this.GetComponent.<troll>().vida <= 0){
      		if (!this.GetComponent.<Animation>().IsPlaying("die")){
          		this.GetComponent.<Animation>().Play("die");
+         		Destroy(this.gameObject, 2);
          	}
      	}
      	else{
@@ -47,6 +48,7 @@ function Update()
          	}
          }
      }
+
 
          
  

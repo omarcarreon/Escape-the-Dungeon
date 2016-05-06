@@ -28,7 +28,7 @@ public class WeaponController : MonoBehaviour {
 
 		//Sonidos
 		AudioSource[] audios = GetComponents<AudioSource>();
-		cambioArma = audios [2];
+		cambioArma = audios[2];
 
 
 		//Textos e Imágenes iniciales
@@ -41,7 +41,7 @@ public class WeaponController : MonoBehaviour {
 	void Update () {
 
 		if (Input.GetKeyDown ("tab")) {
-			print ("tab key was pressed");
+			cambioArma.Play();
 			armaActual++;
 
 			if (armaActual > 2) {

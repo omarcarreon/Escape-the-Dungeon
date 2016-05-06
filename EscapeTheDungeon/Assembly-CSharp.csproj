@@ -48,12 +48,14 @@
      <Compile Include="Assets\Scripts\Menu\MenuScene.cs" />
      <Compile Include="Assets\Scripts\Player\Player.cs" />
      <Compile Include="Assets\Scripts\Player\WeaponController.cs" />
+     <Compile Include="Assets\Scripts\lookAtMe.cs" />
      <Compile Include="Assets\Scripts\rotate.cs" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\bloodHD\readme.txt" />
      <None Include="Assets\fantasy horde_vilagers\shader\Compressed MaskedShader2sided 5-4 cut out.shader" />
      <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Standard Assets\DefaultResources\Normal-Diffuse.shader" />
      <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />

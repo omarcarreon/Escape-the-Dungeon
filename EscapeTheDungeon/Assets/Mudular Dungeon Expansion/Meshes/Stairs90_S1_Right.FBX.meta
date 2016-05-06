@@ -3,7 +3,12 @@ guid: 6a066b5b5648de14f9f7267a600f7474
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: Stairs90_V1_Right
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0

@@ -6,7 +6,7 @@ var closeStopDistance : float = 0.65f;
  
  
 var agent: NavMeshAgent; //drag navmesh enemy here in inspector
- 
+
 function Start(){
  
 }

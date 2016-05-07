@@ -17,13 +17,13 @@ public class winScreen : MonoBehaviour {
 			SceneManager.LoadScene("Main Menu");
 		}
 		else if (Input.GetButton ("Jump")) {
-			SceneManager.LoadScene("Nivel1");
+			SceneManager.LoadScene("Nivel0");
 		}
 	
 	}
 	public void StartGame () 
 	{
-		SceneManager.LoadScene ("Nivel1");
+		SceneManager.LoadScene ("Nivel0");
 	}
 	public void LoadMenu() {
 		SceneManager.LoadScene("Main Menu");

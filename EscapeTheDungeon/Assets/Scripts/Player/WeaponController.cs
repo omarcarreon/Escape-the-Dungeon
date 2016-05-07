@@ -7,6 +7,7 @@ public class WeaponController : MonoBehaviour {
 
 	//Sonidos
 	public AudioSource cambioArma;
+	public AudioSource lanzoArma;
 
 
 	//Variables de Armas
@@ -35,7 +36,8 @@ public class WeaponController : MonoBehaviour {
 
 		//Sonidos
 		AudioSource[] audios = GetComponents<AudioSource>();
-		cambioArma = audios[0];
+		cambioArma = audios[1];
+		lanzoArma = audios[0];
 
 		//Textos e Imágenes iniciales
 		updateTxtWeapons();
@@ -105,6 +107,7 @@ public class WeaponController : MonoBehaviour {
 		switch (armaActual) {
 		case 0:
 			if (GameObject.Find ("stone(Clone)") == null && piedras >0) {
+				lanzoArma.Play ();
 				piedras--;
 				Rigidbody clone = Instantiate (lanzaPiedras, bulletPoint.position, bulletPoint.rotation) as Rigidbody;
 				clone.velocity = transform.TransformDirection (new Vector3 (0, 0, speed));
@@ -114,6 +117,7 @@ public class WeaponController : MonoBehaviour {
 			break;
 		case 1:
 			if (GameObject.Find ("Lanza(Clone)") == null && lanzas > 0) {
+				lanzoArma.Play ();
 				lanzas--;
 				Rigidbody clone = Instantiate (lanzaLanza, bulletPoint.position, bulletPoint.rotation) as Rigidbody;
 				clone.velocity = transform.TransformDirection (new Vector3 (0, 0, speed));
@@ -122,6 +126,7 @@ public class WeaponController : MonoBehaviour {
 			break;
 		case 2:
 			if (GameObject.Find ("Flecha(Clone)") == null && flechas > 0) {
+				lanzoArma.Play ();
 				flechas--;
 				Rigidbody clone = Instantiate (lanzaFlecha, bulletPoint.position, bulletPoint.rotation) as Rigidbody;
 				clone.velocity = transform.TransformDirection (new Vector3 (0, 0, speed));

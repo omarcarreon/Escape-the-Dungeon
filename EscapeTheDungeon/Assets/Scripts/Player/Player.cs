@@ -7,6 +7,8 @@ public class Player : MonoBehaviour {
 
 	//Sonidos
 	public AudioSource corazon;
+	public AudioSource mePegan;
+	public AudioSource lePegoT;
 
 
 	//Variables Personaje
@@ -24,14 +26,16 @@ public class Player : MonoBehaviour {
 	
 		//Sonidos
 		AudioSource[] audios = GetComponents<AudioSource>();
-		corazon = audios [1];
+		corazon = audios [3];
+		mePegan = audios [2];
+		lePegoT = audios [2];
 
 		//Llave
 		llave.SetActive(false);
 
 		//Textos
 		txtVida.text = "Vida: " + ((vida * 100) / MAX_VIDA) + "%";
-		txtScore.text = "Puntos: " + score;
+		txtScore.text = "";
 
 	}
 	
@@ -40,6 +44,10 @@ public class Player : MonoBehaviour {
 
 		if(!GameObject.Find ("Troll")){
 			llave.SetActive(true);
+		}
+
+		if (vida <= 0) {
+			SceneManager.LoadScene ("lose");
 		}
 
 
@@ -59,19 +67,24 @@ public class Player : MonoBehaviour {
 		else if (col.gameObject.name == "+Flechas") {
 			weapons.flechas += 15;
 			Destroy (col.gameObject);
+			corazon.Play ();
 		}
 		else if (col.gameObject.name == "+Lanzas") {
 			weapons.lanzas += 5;
 			Destroy (col.gameObject);
+			corazon.Play ();
 		}
 		else if (col.gameObject.name == "+Piedras") {
 			weapons.piedras += 20;
 			Destroy (col.gameObject);
+			corazon.Play ();
 		}
 		else if (col.gameObject.name == "Llave") {
+			corazon.Play ();
 			SceneManager.LoadScene ("Win");
 		}
 		else if (col.gameObject.name == "CuboEntrada") {
+			corazon.Play ();
 			SceneManager.LoadScene ("Nivel1");
 		}
 
@@ -79,9 +92,19 @@ public class Player : MonoBehaviour {
 	}
 
 	public void meAtacan(){
-		vida -= 1;
+
+		if (mePegan.isPlaying == false) {
+			mePegan.Play ();
+		}
+		vida -= 5;
 		txtVida.text = "Vida: " + ((vida * 100) / MAX_VIDA) + "%";
 	}
 		
+	public void lePego(){
+		if (lePegoT.isPlaying == false) {
+			lePegoT.Play ();
+		}
+	}
+
 }
 	

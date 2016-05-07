@@ -3,8 +3,8 @@
 internal var source: AudioSource;
 
 function Start () {
-	var aSources = GetComponents(AudioSource);
-	source = aSources[0];
+	//var aSources = GetComponents(AudioSource);
+	//source = aSources[1];
 }
 
 function Update () {
@@ -14,6 +14,6 @@ function Update () {
 function OnTriggerEnter(col : Collider){
 
 	if(col.gameObject.name == "JugadorCam"){
-		source.Play();
+		//source.Play();
 	}
 }

@@ -12,6 +12,15 @@ public class MenuScene : MonoBehaviour {
 		credPanel.SetActive (false);
 	}
 
+	// Update is called once per frame
+	void Update () {
+
+		if (Input.GetButton ("Jump")) {
+			SceneManager.LoadScene("Nivel0");
+		}
+
+	}
+
 	public void lookCredits () {
 		credPanel.SetActive (true);
 	}

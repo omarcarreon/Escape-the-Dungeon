@@ -10,9 +10,9 @@ public class WeaponController : MonoBehaviour {
 
 
 	//Variables de Armas
-	int piedras = 20;
-	int lanzas = 10;
-	int flechas = 10;
+	public int piedras = 20;
+	public int lanzas = 10;
+	public int flechas = 10;
 	private int armaActual = 0;
 
 	//Outlets de armas
@@ -28,6 +28,7 @@ public class WeaponController : MonoBehaviour {
 	public Rigidbody lanzaPiedras;
 	public Rigidbody lanzaFlecha;
 	public Rigidbody lanzaLanza;
+	public Transform bulletPoint;
 
 	// Use this for initialization
 	void Start () {
@@ -45,7 +46,7 @@ public class WeaponController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.GetKeyDown ("tab")) {
+		if (Input.GetKeyDown ("tab") || Input.GetButtonUp ("tab")) {
 			cambioArma.Play();
 			armaActual++;
 
@@ -59,7 +60,7 @@ public class WeaponController : MonoBehaviour {
 		}
 	}
 
-	void updateTxtWeapons(){
+	public void updateTxtWeapons(){
 		txtSlingshot.text = "" + piedras;
 		txtLanzas.text = "" + lanzas;
 		txtFlechas.text = "" + flechas;
@@ -103,29 +104,33 @@ public class WeaponController : MonoBehaviour {
 		float tiempoDeVida = .5f;
 		switch (armaActual) {
 		case 0:
-			if (GameObject.Find ("stone(Clone)") == null) {
-				Rigidbody clone = Instantiate (lanzaPiedras, transform.position, transform.rotation) as Rigidbody;
+			if (GameObject.Find ("stone(Clone)") == null && piedras >0) {
+				piedras--;
+				Rigidbody clone = Instantiate (lanzaPiedras, bulletPoint.position, bulletPoint.rotation) as Rigidbody;
 				clone.velocity = transform.TransformDirection (new Vector3 (0, 0, speed));
 				Destroy(clone.gameObject, tiempoDeVida);
 
 			}
 			break;
 		case 1:
-			if (GameObject.Find ("Lanza(Clone)") == null) {
-				Rigidbody clone = Instantiate (lanzaLanza, transform.position, transform.rotation) as Rigidbody;
+			if (GameObject.Find ("Lanza(Clone)") == null && lanzas > 0) {
+				lanzas--;
+				Rigidbody clone = Instantiate (lanzaLanza, bulletPoint.position, bulletPoint.rotation) as Rigidbody;
 				clone.velocity = transform.TransformDirection (new Vector3 (0, 0, speed));
 				Destroy (clone.gameObject, tiempoDeVida);
 			}
 			break;
 		case 2:
-			if (GameObject.Find ("Flecha(Clone)") == null) {
-				Rigidbody clone = Instantiate (lanzaFlecha, transform.position, transform.rotation) as Rigidbody;
+			if (GameObject.Find ("Flecha(Clone)") == null && flechas > 0) {
+				flechas--;
+				Rigidbody clone = Instantiate (lanzaFlecha, bulletPoint.position, bulletPoint.rotation) as Rigidbody;
 				clone.velocity = transform.TransformDirection (new Vector3 (0, 0, speed));
 				Destroy(clone.gameObject, tiempoDeVida);
 			}
 			break;
 		}
 
+		updateTxtWeapons ();
 	}
 
 }

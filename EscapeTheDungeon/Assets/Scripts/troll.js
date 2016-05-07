@@ -15,15 +15,16 @@ function Update () {
 function OnTriggerEnter(col : Collider){
 
 	if(col.gameObject.name == "Flecha(Clone)"){
-		vida -= 120;
+		vida -= 320;
+		Destroy(col.gameObject);
 	}
 	if(col.gameObject.name == "stone(Clone)"){
-		vida -= 100;
-
+		vida -= 200;
+		Destroy(col.gameObject);
 	}
 	if(col.gameObject.name == "Lanza(Clone)"){
-		vida -= 150;
-
+		vida -= 550;
+		Destroy(col.gameObject);
 	}
 }
 

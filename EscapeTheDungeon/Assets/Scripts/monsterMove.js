@@ -2,6 +2,7 @@
 var Distance;
 var chaseDistance : float = 3.0f;
 var closeStopDistance : float = 0.65f;
+
  
  
 var agent: NavMeshAgent; //drag navmesh enemy here in inspector
@@ -18,14 +19,19 @@ function Update()
      //Debug.Log(Distance);
 
      //Atacar
-     if (Distance < closeStopDistance){
+     if (Distance < closeStopDistance && this.GetComponent.<troll>().vida > 0){
          agent.Stop();
          if (!this.GetComponent.<Animation>().IsPlaying("attack2")){
          	this.GetComponent.<Animation>().Play("attack2");
          }
+
+        var cs = GameObject.Find("JugadorCam");
+        var script = cs.GetComponent("Player");
+        script.meAtacan();
+
      }
      //estoy caminando
-     else if (Distance < chaseDistance){
+     else if (Distance < chaseDistance && this.GetComponent.<troll>().vida > 0){
      	if (!this.GetComponent.<Animation>().IsPlaying("walk")){
          	this.GetComponent.<Animation>().Play("walk");
          }

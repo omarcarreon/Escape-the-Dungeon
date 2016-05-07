@@ -71,6 +71,9 @@ public class Player : MonoBehaviour {
 		else if (col.gameObject.name == "Llave") {
 			SceneManager.LoadScene ("Win");
 		}
+		else if (col.gameObject.name == "CuboEntrada") {
+			SceneManager.LoadScene ("Nivel1");
+		}
 
 		weapons.updateTxtWeapons ();
 	}
